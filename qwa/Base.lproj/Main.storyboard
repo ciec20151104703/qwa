@@ -46,11 +46,17 @@
                                 <rect key="frame" x="254" y="266" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="退回"/>
+                                <connections>
+                                    <action selector="tui2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOw-pc-BSN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5C-iy-Pth">
                                 <rect key="frame" x="254" y="228" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="加分"/>
+                                <connections>
+                                    <action selector="jiafen2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJY-Xh-vVa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-KV-own">
                                 <rect key="frame" x="92" y="191" width="31" height="21"/>
@@ -83,6 +89,7 @@
                     </view>
                     <connections>
                         <outlet property="fen1" destination="SuJ-KV-own" id="Xiq-43-MJ3"/>
+                        <outlet property="fen2" destination="a93-S2-b5D" id="nbY-ok-Tob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
