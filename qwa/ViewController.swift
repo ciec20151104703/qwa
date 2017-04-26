@@ -9,7 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var fen1: UILabel!
+    var a:Int = 0
+    @IBAction func jiafen1(_ sender: Any) {
+        a=a+1
+        fen1.text=("\(a)");
+    }
+    @IBAction func tui1(_ sender: Any) {
+        a=a-1
+        fen1.text=("\(a)");
+        if a == 0 {
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
