@@ -19,16 +19,22 @@ class ViewController: UIViewController {
         fen1.text=("\(a)");
     }
     @IBAction func tui1(_ sender: Any) {
-        a=a-1
+        a = Int(fen1.text!)!;
+        if a>0{
+            a = a-1;
         fen1.text=("\(a)");
+        }
     }
     @IBAction func jiafen2(_ sender: Any) {
         b=b+1
         fen2.text=("\(b)");
     }
     @IBAction func tui2(_ sender: Any) {
-        b=b-1
-        fen2.text=("\(b)");
+        b = Int(fen2.text!)!;
+        if b>0{
+            b = b-1;
+            fen2.text=("\(b)");
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
