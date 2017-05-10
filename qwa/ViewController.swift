@@ -33,6 +33,24 @@ class ViewController: UIViewController {
             fen1.text=("\(a)");
             fen2.text=("\(b)");
         }
+        if(c==3){
+            let alertVC = UIAlertController(title: "提示", message: "张继科胜！！！", preferredStyle: UIAlertControllerStyle.alert)
+            c=0;
+            d=0;
+            fen3.text=("\(c)");
+            fen4.text=("\(d)");
+            
+            let acSure = UIAlertAction(title: "确定", style: UIAlertActionStyle.destructive) { (UIAlertAction) -> Void in
+                print("click Sure")
+            }
+            let acCancel = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel) { (UIAlertAction) -> Void in
+                print("click Cancel")
+            }
+            alertVC.addAction(acSure)
+            alertVC.addAction(acCancel)
+            self.present(alertVC, animated: true, completion: nil)
+        }
+        
     }
     @IBAction func tui1(_ sender: Any) {
         a = Int(fen1.text!)!;
@@ -51,6 +69,24 @@ class ViewController: UIViewController {
             b=0;
             fen1.text=("\(a)");
             fen2.text=("\(b)");
+        }
+        if(d==3){
+            let alertVC = UIAlertController(title: "提示", message: "马龙胜！！！", preferredStyle: UIAlertControllerStyle.alert)
+            c=0;
+            d=0;
+            fen3.text=("\(c)");
+            fen4.text=("\(d)");
+            
+            let acSure = UIAlertAction(title: "确定", style: UIAlertActionStyle.destructive) { (UIAlertAction) -> Void in
+                print("click Sure")
+            }
+            let acCancel = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel) { (UIAlertAction) -> Void in
+                print("click Cancel")
+            }
+            alertVC.addAction(acSure)
+            alertVC.addAction(acCancel)
+            self.present(alertVC, animated: true, completion: nil)
+            
         }
 
     }
