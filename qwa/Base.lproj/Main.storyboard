@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="换场"/>
                                 <connections>
-                                    <segue destination="2VH-Fe-s4M" kind="show" id="y6H-lD-Az7"/>
+                                    <segue destination="2VH-Fe-s4M" kind="show" id="TgU-qs-CGF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-Sg-ebl">
@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="退回"/>
                                 <connections>
-                                    <action selector="tui1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eic-ia-UzL"/>
+                                    <action selector="reductions1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VIZ-R1-jFG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMj-jz-cE8">
@@ -42,7 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="退回"/>
                                 <connections>
-                                    <action selector="tui2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOw-pc-BSN"/>
+                                    <action selector="redcutions2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6n9-6x-8kA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5C-iy-Pth">
@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="加分"/>
                                 <connections>
-                                    <action selector="jiafen2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJY-Xh-vVa"/>
+                                    <action selector="adds2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uq4-OP-d6d"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a93-S2-b5D">
@@ -102,22 +102,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="加分"/>
                                 <connections>
-                                    <action selector="jiafen1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDD-2o-sye"/>
+                                    <action selector="adds1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLZ-L9-ii3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="fen1" destination="SuJ-KV-own" id="Xiq-43-MJ3"/>
-                        <outlet property="fen2" destination="a93-S2-b5D" id="nbY-ok-Tob"/>
-                        <outlet property="fen3" destination="ia5-Ip-XV7" id="iYF-2U-1KF"/>
-                        <outlet property="fen4" destination="xqh-NP-4Mt" id="p0P-75-S31"/>
+                        <outlet property="score1" destination="SuJ-KV-own" id="Ztb-Wg-PnD"/>
+                        <outlet property="score2" destination="a93-S2-b5D" id="r8x-kj-E06"/>
+                        <outlet property="score3" destination="ia5-Ip-XV7" id="9oG-qO-zPk"/>
+                        <outlet property="score4" destination="xqh-NP-4Mt" id="Qsv-xn-oAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="71"/>
+            <point key="canvasLocation" x="26" y="39"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Rb-Fn-fgT">
@@ -140,7 +140,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="换场"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Sfa-md-gdv"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7HH-BG-lO2"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="u=3690318338,1819683903&amp;fm=23&amp;gp=0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vuq-rL-dPz">
@@ -188,8 +188,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="退回"/>
                                 <connections>
-                                    <action selector="tui1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rig-Z0-qTc"/>
-                                    <action selector="tui3:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="J0D-1p-wdb"/>
+                                    <action selector="reductions3:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="mmG-W5-eCs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gx-Hp-eH7">
@@ -197,8 +196,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="加分"/>
                                 <connections>
-                                    <action selector="jiafen2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03B-jB-DkE"/>
-                                    <action selector="jiafen4:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="whU-O1-lpo"/>
+                                    <action selector="adds4:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="Cjo-Ex-WA7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty9-iQ-nhu">
@@ -206,8 +204,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="加分"/>
                                 <connections>
-                                    <action selector="jiafen1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oZ-3M-v4m"/>
-                                    <action selector="jiafen3:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="5Lc-SH-Zlc"/>
+                                    <action selector="adds3:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="Psd-GI-XRG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-Wj-8f1">
@@ -215,24 +212,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="退回"/>
                                 <connections>
-                                    <action selector="tui1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmE-k9-a33"/>
-                                    <action selector="tui3:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="vgQ-kz-cbu"/>
-                                    <action selector="tui4:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="ek0-sG-aYP"/>
+                                    <action selector="reductions4:" destination="2VH-Fe-s4M" eventType="touchUpInside" id="Uah-m6-dxC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="fen5" destination="hm6-ZC-h5N" id="5Tx-M2-Kym"/>
-                        <outlet property="fen6" destination="FEk-RI-irA" id="HuU-gJ-XZb"/>
-                        <outlet property="fen7" destination="4p2-GD-8VW" id="gf7-7q-TpQ"/>
-                        <outlet property="fen8" destination="Dcz-On-eYh" id="lRj-Au-zEH"/>
+                        <outlet property="score5" destination="hm6-ZC-h5N" id="qpK-EM-5fW"/>
+                        <outlet property="score6" destination="FEk-RI-irA" id="JAP-xU-YdE"/>
+                        <outlet property="score7" destination="4p2-GD-8VW" id="He6-xB-tOS"/>
+                        <outlet property="score8" destination="Dcz-On-eYh" id="MuQ-Qq-Kii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2L-w0-jwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="71"/>
+            <point key="canvasLocation" x="628" y="38"/>
         </scene>
     </scenes>
     <resources>
